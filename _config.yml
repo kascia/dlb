@@ -1,0 +1,21 @@
+# Site settings
+title: DLB
+
+email: "leewk921223@gmail.com"
+url: "http://kascia.github.io/"
+github_url: "http://github.com/kascia/dlb"
+github_editurl: "/blob/master"
+github_profile: "http://github.com/kascia"
+baseurl: "/dlb"
+disqus_shortname: kascia
+
+exclude:
+  - README.md
+  - _site
+
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <div class="well-sm">
+      <h3>Introduction</h3>
+      <p>이 페이지는 딥러닝북을 정리한 문서입니다.  </p>
+      <p>
+	      <a href="http://www.deeplearningbook.org" target="_blank">
+	        <button type="button" class="btn btn-success">교재 정보</button>
+	      </a>
+
+      </p>
+      </p>
+    </div>
+
+    <div class="well-sm">
+      <h3>New Posts</h3>
+      <ul class="post-list">
+	      {% for post in site.posts limit:3 %}
+	      <li>
+	        <h4>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h4>
+	        <p><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></p>
+	        {{ post.excerpt }}
+          <hr/>
+	      </li>
+	      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6">
+    <div class="well-sm">
+      <h3>Chapter 1. 소개 (Introduction)</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/0">1.0. Introduction</a></li>
+
+      </ul>
+    </div>
+    <div class="well-sm">
+      <h3>Chapter 2. 선형 대수 (Linear Algebra)</h3>
+    </div>
+    <div class="well-sm">
+      <h3>Chapter 3. 확률과 정보 이론 (Probability and Information Theory)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 4. 수치 계산 (Numerical Computation)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 5. 머신러닝 기초 (Machine Learning Basics)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 6. 깊은 피드 포워드 네트워크 (Deep Feedforward Network)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 7. 딥러닝의 정규화 (Regularization for Deep Learning)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 8. 깊은 모델 학습을 위한 최적화 (Optimization for Traning Deep Models)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 9. 컨볼루션 네트워크 (Convoltional Networs)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 10. 시퀀스 모델링: 반복 그리고 재귀 네트워크 (Sequance Modeling: Recurrent and Recursive Nets)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 11. 실용 방법론 (Practical Methodology)</h3>
+    </div>
+
+    <div class="well-sm">
+      <h3>Chapter 12. 응용 (Applications)</h3>
+    </div>
+
+  </div>
+</div>
